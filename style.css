@@ -1,0 +1,205 @@
+/* style.css */
+
+body.panel-bg {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #6ee7b7, #1e3a8a);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.description {
+  background: #d1f5f0;
+  padding: 1rem 2rem;
+  max-width: 700px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.login-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  animation: fadeIn 1.4s ease-in;
+}
+
+.panel {
+  background: #d1f5f0;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+}
+
+.panel input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+.panel button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.panel button:hover {
+  transform: scale(1.05);
+  background: #3b82f6;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 95%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input[type="file"],
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form select {
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  background: #f3f4f6;
+}
+
+form .score-suggestion {
+  background: #e0f7ec;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #065f46;
+  font-size: 0.9rem;
+  animation: fadeIn 1s ease-in;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 0.7rem 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #3b82f6;
+}
+
+.success-msg {
+  color: green;
+  font-weight: bold;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filters input, .filters select, .filters button {
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.contact {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  animation: slideIn 0.6s ease-out;
+}
+
+.bubble {
+  background: #d1f5f0;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

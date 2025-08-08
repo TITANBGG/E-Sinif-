@@ -1,0 +1,58 @@
+<!-- degerlendir.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ödev Değerlendirme - e Sınıf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="panel-bg">
+  <div class="container">
+    <h2>Ödev Değerlendirme</h2>
+    <iframe src="odev.pdf" class="pdf-viewer"></iframe>
+
+    <form>
+      <label>Anlatım Bütünlüğü: <input type="number" min="1" max="5"></label>
+      <label>Kaynak Kullanımı: <input type="number" min="1" max="5"></label>
+      <label>Yorum Gücü: <input type="number" min="1" max="5"></label>
+      <label>Dil ve Anlatım: <input type="number" min="1" max="5"></label>
+      <textarea placeholder="Geri bildirim..."></textarea>
+      <button>Notlandır ve Kaydet</button>
+    </form>
+  </div>
+</body>
+</html>
+
+<!-- raporlama.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not Listesi - e Sınıf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="panel-bg">
+  <div class="container">
+    <h2>Not Listesi</h2>
+    <div class="filters">
+      <input type="text" placeholder="Kod adına göre ara">
+      <select>
+        <option>Nota göre</option>
+        <option>Tarihe göre</option>
+      </select>
+      <button>CSV indir</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Kod Adı</th><th>Not</th><th>Tarih</th><th>Geri Bildirim</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ZXP1-9KQW</td><td>18</td><td>2025-07-16</td><td>Güzel analiz.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

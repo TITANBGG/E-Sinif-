@@ -1,0 +1,28 @@
+<!-- ogrenci-panel.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ödev Yükle - e Sınıf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="panel-bg">
+  <div class="container">
+    <h2>Ödevini Yükle</h2>
+    <p class="uuid-display">KodAdı: <strong>ZXP1-9KQW</strong></p>
+
+    <form>
+      <label>Ödev Dosyası (PDF/DOCX):</label>
+      <input type="file" accept=".pdf,.docx" required />
+
+      <label>Ek Açıklama (opsiyonel):</label>
+      <textarea placeholder="Varsa ek bilgi girin..."></textarea>
+
+      <button type="submit">Yükle ve Gönder</button>
+    </form>
+
+    <p class="success-msg" style="display:none;">✅ Ödeviniz başarıyla gönderildi!</p>
+  </div>
+</body>
+</html>

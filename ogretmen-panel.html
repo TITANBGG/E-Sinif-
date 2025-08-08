@@ -1,0 +1,73 @@
+<!-- ogretmen-panel.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Öğretmen Paneli - e Sınıf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="panel-bg">
+  <div class="container">
+    <h2>Öğretmen Paneli</h2>
+
+    <section>
+      <h3>Yeni Sınıf Oluştur</h3>
+      <form>
+        <input type="text" placeholder="Sınıf Adı" required>
+        <input type="text" placeholder="Açıklama">
+        <button>Katılım Linki Oluştur</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Yüklenen Ödevler</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Kod Adı</th>
+            <th>Dosya</th>
+            <th>Tarih</th>
+            <th>Durum</th>
+            <th>İşlem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ZXP1-9KQW</td>
+            <td><a href="#">indir</a></td>
+            <td>2025-07-16</td>
+            <td>Beklemede</td>
+            <td><a href="degerlendir.html">Değerlendir</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <div class="container">
+  <h2>Ödev Değerlendirme</h2>
+
+  <div class="pdf-viewer">📄 PDF önizleme buraya yüklenecek</div>
+
+  <form>
+    <label>Anlatım Bütünlüğü</label>
+    <input type="number" min="1" max="5">
+    <label>Kaynak Kullanımı</label>
+    <input type="number" min="1" max="5">
+    <label>Yorum Gücü</label>
+    <input type="number" min="1" max="5">
+    <label>Dil ve Anlatım</label>
+    <input type="number" min="1" max="5">
+
+
+    <div class="score-suggestion">
+      Yapay zekâ önerisi: 16/20 – Eksik kaynak gösterimi tespit edildi.
+    </div>
+
+    <textarea placeholder="Geri Bildirim"></textarea>
+    <button>Notlandır ve Kaydet</button>
+  </form>
+</div>
+
+</body>
+</html>
